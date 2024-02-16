@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Alura - Decodificador</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="container">
+
+    <header class="container-header">
+        <img src="./images/Logo.svg" alt="logo alura">
+    </header>
+
+    <main class="container-main">
+        <section class="container-content">
+            <textarea class="area-text" id="main-text" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+
+            <p class="alert-text"><img src="./images/alert.svg" alt="imagem de alerta">Apenas letras minúsculas e sem acento</p>
+
+            <div class="button-area">
+                <button class="button btn-encrypt" id="encrypt-button" onclick="encrypt()">Criptografar</button>
+                <button class="button btn-decrypt" id="decrypt-button" onclick="decrypt()">Descriptografar</button>
+            </div>
+        </section>
+
+        <aside class="container-aside">
+            <p class="result-text hidden"></p>
+            <img class="container-aside-img" src="./images/imagem.svg" alt="pessoa olhando um diamante através de uma lupa">
+            <h1 class="container-title">Nenhuma mensagem encontrada</h1>
+            <p class="container-message">Digite um texto ao lado para criptografar ou descriptografar.</p>
+            <button class="button btn-copy hidden" id="encrypt-button" onclick="copyText()">Copiar</button>
+        </aside>
+    </main>
+    
+    <footer class="container-footer">
+        <section class="switch-mode" id="switchMode">
+            <div class="switch-mode-button"></div>
+            <img src="./images/sun.svg" alt="icone do light-mode" class="sun hidden">
+            <img src="./images/moon.svg" alt="icone do dark-mode" class="moon">
+        </section>
+        <section class="container-footer-social">
+            <p class="container-footer-developer">Desenvolvido por Endí Marani</p>
+            <p class="container-footer-message">Acesse minhas redes</p>
+            <div class="footer-container-icons">
+                <a href="https://www.instagram.com/endimarani/" target="_blank"><img class="footer-icon-insta" src="./images/instagram.png" alt="ícone do instagram"></a>
+                <a href="https://github.com/EndiMaraniDev" target="_blank"><img class="footer-icon-linkedin" src="./images/github.png" alt="ícone do linkedin"></a>
+                <a href=""></a>
+                <a href="https://www.linkedin.com/in/endimarani/" target="_blank"><img class="linkedin-icon" src="./images/linkedin.png" alt="icone do linkedin"></a>
+            </div>
+            <p class="footer-end">T6 ONE - Oracle Next Education</p>
+        </section>
+        
+    </footer>
+    
+    <script src="./src/scripts.js"></script>
+</body>
+</html>
